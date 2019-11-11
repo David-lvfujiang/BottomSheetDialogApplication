@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/layout"
+    android:background="@color/cardview_shadow_start_color"
+   >
+<com.example.bottomsheetdialogapplication.MyView
+    android:layout_width="wrap_content"
+    android:layout_gravity="end|bottom"
+    app:elevation="10dp"
+    android:layout_centerInParent="true"
+    android:clickable="true"
+    android:backgroundTint="#ffffff"
+    app:borderWidth="0dp"
+    app:rippleColor="#0097a7"
+    android:src="@mipmap/setting"
+    app:pressedTranslationZ="12dp"
+    android:layout_height="wrap_content"></com.example.bottomsheetdialogapplication.MyView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_centerInParent="true"
+        android:id="@+id/floatbutton"
+        app:elevation="10dp"
+        android:clickable="true"
+        android:backgroundTint="#ffffff"
+        app:borderWidth="0dp"
+        app:rippleColor="#0097a7"
+        android:src="@mipmap/setting"
+        app:pressedTranslationZ="12dp"
+        android:layout_height="wrap_content" >
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+</RelativeLayout>
